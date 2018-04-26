@@ -5,8 +5,9 @@
 <div id="header">
 
     <div id="logo">
-
+        <img src="{{url('images/logoimcye.png')}}" height="20%">
         <a>Fooorba</a>
+
 
     </div>
 </div>
@@ -25,19 +26,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <!-- Tab links -->
-
                 <!--Datos de Obrero-->
                 <div class="tab-content">
+
                     <div id="home" class="tab-pane fade in active">
+
+                        <div class="col-lg-12">
+                            <div class="page-header" style="font-size: 25pt; color: #00796B">
+                                <span class="glyphicon glyphicon-bishop"></span> Datos del cliente
+                            </div>
+                        </div>
                         <!-- **************FORMULARIO*************** -->
                         <form class="form-horizontal" action="#" method="POST" onsubmit="return validar();"
                               autocomplete="off">
 
-                            <div class="col-lg-12">
-                                <div class="page-header" style="font-size: 25pt; color: #00796B">
-                                    <span class="glyphicon glyphicon-bishop"></span> Datos del cliente
-                                </div>
-                            </div>
+
                             <!--Nombre del cliente-->
                             <div class="form-group">
                                 <label class="control-label col-sm-2">Nombre:</label>
@@ -212,5 +215,21 @@
         </div>
     </div>
 </div>
+<div id="footer">
+    <div class="container">
+        <section>
+            <header>
+                <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+            </header>
+            <ul class="contact">
+                <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+                <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+                <li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+                <li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
 
 </body>

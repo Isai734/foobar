@@ -729,7 +729,7 @@
 
 	ul.contact
 	{
-		padding: 1.5em 0 0 0;
+		padding: 1em 0 0 0;
 		list-style: none;
 		cursor: default;
 	}
@@ -774,7 +774,7 @@
 		background: url(../images/header.jpg) no-repeat bottom center;
 		background-attachment: fixed;
 		background-size: cover;
-        text-align: center;
+        text-align: start;
 	}
 	
 		#header:before
@@ -794,10 +794,9 @@
 
 	#logo
 	{
-		position: relative;
-		z-index: 1;
-        display: inline-flex;
-	}
+        padding: 1em 0 0 0;
+        cursor: default;
+    }
 	
 		#logo h1
 		{
@@ -806,25 +805,27 @@
 	
 		#logo a
 		{
-			display: block;
 			text-decoration: none;
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 4em;
 			color: #FFF;
 			letter-spacing: -0.05em;
-			margin: 0 0 0.125em 0;
+            margin: 0 1em;
             vertical-align: middle;
         }
 
         #logo img{
-
+            display: inline-block;
+            margin: 0 1em;
         }
 		
 		#logo span
 		{
 			font-size: 1.4em;
 			color: #FFF;
+            display: block;
+            margin: 0 11em;
 		}
 
 /*********************************************************************************/
@@ -925,6 +926,7 @@
 	{
 		position: relative;
 		text-align: center;
+        background: #1b1b1b;
 	}
 	
 	#footer header h2
@@ -934,7 +936,7 @@
 	
 	#footer header .byline
 	{
-		color: rgba(255,255,255,.2);
+		color: rgba(255,255,255,.7);
 	}
 
 /*********************************************************************************/
