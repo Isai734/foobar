@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('login', function () {
+    return view('login');
+});
+
+
 Route::get('register','AddPersonaController@insertform');
 
 Route::post('/user/register',array('uses'=>'UserRegistration@postRegister'));

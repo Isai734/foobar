@@ -5,10 +5,13 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="{{asset('css/style-loader.css') }}"/>
+    <div class="loader">
+    </div>
+
     <script src="{{asset('js/skel.min.js') }}"></script>
     <script src="{{asset('js/skel-panels.min.js') }}"></script>
     <script src="{{asset('js/init.js') }}"></script>
-
     <noscript>
         <link rel="stylesheet" href="{{asset('css/skel-noscript.css')}}"/>
         <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
@@ -19,6 +22,8 @@
 </head>
 
 <body>
+
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -107,19 +112,19 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="login.php">
-                        <span class="glyphicon glyphicon-off"></span> Cerrar Sesión
+                    <a href="{{url('login')}}">
+                        <span class="glyphicon glyphicon-off"></span> Iniciar Sesión
                     </a>
                 </li>
             </ul>
-
-
         </div>
-
-
     </div>
 </nav>
-</body>
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".loader").fadeOut();
+    })
+</script>
 
 <script src="{{asset('js/jquery-3.2.0.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.js')}}"></script>
