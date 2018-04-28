@@ -53,10 +53,10 @@
     </div>
 
     <!-- FORMULARIO -->
-    <form name="form_1" action="<?php $_SERVER['PHP_SELF']; ?>" method="POST" onsubmit="return validar()"
+    <form name="form_1" action="/register" method="POST" onsubmit="return validar()"
           autocomplete="off">
 
-        <label style="font-size: 19px; color:#cc0000;"><?php echo isset($error) ? utf8_decode($error) : ''; ?></label>
+        <label style="font-size: 19px; color:#cc0000;">Aqui va el Error</label>
         <div class="form-group-lg">
             <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="form-control" autofocus>
         </div>
@@ -81,13 +81,8 @@
                 </td>
             </tr>
         </table>
-
-
     </form>
 </div>
-
-
-
 
 <script>
     function registrar() {

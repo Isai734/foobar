@@ -2130,6 +2130,12 @@ ul.contact li a:hover {
 }
 
 .homepage #content {
+    align-items: center;
+    text-align: left;
+    padding: 0 10em 0 10em;
+}
+
+.homepage #content-f {
     text-align: center;
 }
 
